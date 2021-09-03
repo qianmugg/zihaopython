@@ -64,6 +64,7 @@ Jupyter notebook是基于Ipython内核的，在浏览器中以网页形式运行
 
 ```shell
 pip install jupyter -i https://pypi.tuna.tsinghua.edu.cn/simple
+指定版本命令：pip install jupyter==1.0.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
 ## 运行Jupyter notebook
