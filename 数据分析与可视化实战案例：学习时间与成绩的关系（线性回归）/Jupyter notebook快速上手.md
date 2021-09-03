@@ -65,11 +65,16 @@ Jupyter notebook是基于Ipython内核的，在浏览器中以网页形式运行
 ```shell
 pip install jupyter -i https://pypi.tuna.tsinghua.edu.cn/simple
 指定版本命令：pip install jupyter==1.0.0 -i https://pypi.tuna.tsinghua.edu.cn/simple
+如果报错显示不是内部或外部命令，需要添加环境变量
+首先确定jupyter的安装路径，我使用Everything搜到安装在C:\Users\Monster\AppData\Roaming\Python\Python38\site-packages
+1.如果你的Jupyter安装后仅为Monster这个用户使用的，则在Monster的用户变量中Path变量添加地址C:\Users\Monster\AppData\Roaming\Python\Python38\Scripts
+2.如果你的Jupyter安装后是为所有用户使用的，则在系统变量中Path变量添加地址C:\Users\Monster\AppData\Roaming\Python\Python38\Scripts
+3.傻瓜会同时在Monster用户变量和环境变量中同时添加环境变量也尚可
 ```
 
 ## 运行Jupyter notebook
 
-打开命令行，输入`jupter notebook`，回车。稍等片刻即可跳出浏览器网页。
+打开命令行，输入`jupyter notebook`，回车。稍等片刻即可跳出浏览器网页。
 
 ![jupyter notebook打开界面](https://upload-images.jianshu.io/upload_images/13714448-803f32720cf0278e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
